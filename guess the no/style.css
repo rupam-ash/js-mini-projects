@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+}
+.container {
+  background-color: #222;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+  z-index: -1;
+}
+
+.btn {
+  font-size: 2rem;
+  border: none;
+  font-family: inherit;
+  display: block;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #d1cfcf;
+}
+.number-range {
+  font-size: 1.4rem;
+}
+
+.header {
+  position: relative;
+  height: 35%;
+  border-bottom: 7px solid #fff;
+}
+
+.number-range {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+}
+
+.btn-again {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+
+.header h2 {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  display: inline-block;
+  font-size: 5rem;
+  background-color: #fff;
+  color: #222;
+  padding: 2rem 4rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19rem;
+  text-align: center;
+}
+
+.playing-section {
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: inherit;
+}
+.guess {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.input-number {
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  background: none;
+  color: inherit;
+  border: 5px solid #fff;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: flex-end;
+}
+
+.play p {
+  font-size: 2rem;
+}
+
+.modals {
+  font-family: "Press Start 2P", sans-serif;
+  background-color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  z-index: 10;
+}
+.cross {
+  font-size: 4rem;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.modal-text {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(4px);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
